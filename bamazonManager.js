@@ -8,7 +8,6 @@ var connection = mysql.createConnection({
     database: 'bamazon_db'
 });
 
-//Establish Connection - Call the Manager Input function
 connection.connect(function(err) {
     if (err) throw err;
     console.log('connected as id: ' + connection.threadId)
