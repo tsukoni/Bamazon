@@ -27,12 +27,13 @@ INSERT INTO products(product_name, department_name, price, stock_quantity) VALUE
 CREATE TABLE departments (
 	department_id INT NOT NULL AUTO_INCREMENT,
 	department_name VARCHAR(100) NOT NULL,
-	overheadCost DECIMAL(10,2) NOT NULL,
-	total_sales DECIMAL(10,2),
+	overhead_cost DECIMAL(10,2) NOT NULL,
+	total_sales DECIMAL(10,2) DEFAULT 2000,
+    profit DECIMAL(10,2) DEFAULT 0,
 	PRIMARY KEY(department_id)
 );
 
-INSERT INTO departments(department_name, overheadCost) VALUES('Electronics', 1500);
-INSERT INTO departments(department_name, overheadCost) VALUES('Apparel', 500);
-INSERT INTO departments(department_name, overheadCost) VALUES('Figurines', 800);
-INSERT INTO departments(department_name, overheadCost) VALUES('Accessories', 300);
+INSERT INTO departments(department_name, overhead_cost) VALUES('Electronics', 1500);
+INSERT INTO departments(department_name, overhead_cost) VALUES('Apparel', 500);
+INSERT INTO departments(department_name, overhead_cost) VALUES('Figurines', 800);
+INSERT INTO departments(department_name, overhead_cost) VALUES('Accessories', 300);
