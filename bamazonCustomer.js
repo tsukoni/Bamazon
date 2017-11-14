@@ -61,7 +61,7 @@ function placeOrder() {
                 amountOwed = res[0].price * answer.selectQuantity;
                 currentDepartment = res[0].department_name;
                 console.log('\nThank you for your order');
-                console.log('\nYour total comes out to $' + amountOwed);
+                console.log('\nYour total comes out to $' + amountOwed.toFixed(2));
                 console.log('');
                 connection.query('UPDATE products SET ? Where ?', [{
                     stock_quantity: res[0].stock_quantity - answer.selectQuantity
