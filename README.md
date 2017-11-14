@@ -12,4 +12,9 @@ There are three variations to this app, all of which have their own uses.
 
 ##Bamazon Manager The second app, bamazonManager.js, allows a "manager" to view available items, view low inventory (less than five in stock), add to the inventory, or add a new product.
 
-![Bamazon Customer](https://github.com/tsukoni/Bamazon/blob/master/Images/bamazonManager.png)
+![Bamazon Manager](https://github.com/tsukoni/Bamazon/blob/master/Images/bamazonManager.png)
+
+##Bamazon Supervisor The final app, bamazonSupervisor.js, allows a "supervisor" to view sales by department or add a new department. Adding a new department is an important feature for the executive. While the manager is capable of adding new products, including a department, revenue earned from that department cannot be tracked until after the manager had added that department to executive database.
+
+![Bamazon Supervisor](https://github.com/tsukoni/Bamazon/blob/master/Images/bamazonSupervisor.png)
+
